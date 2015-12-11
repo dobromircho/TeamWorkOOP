@@ -1,0 +1,9 @@
+﻿Game objective: Kill everyone!
+-help - displayes basic game information and commands
+-map - displayes the map
+-left, righ, up, down - player movement
+-status - displays current player status, enemies left
+-enemies - displays information about enemies on the map
+-clear - clears the screen 
+-exit - surrender
+
