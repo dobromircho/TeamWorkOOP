@@ -256,7 +256,7 @@ namespace TrqbvaDaSiIzberemIme.GameEngine
                 }
                 sb.AppendLine();
             }
-            //this.renderer.WriteLine(sb.ToString());
+            
             foreach (char ch in sb.ToString())
             {
                 if (ch == 'P')
@@ -327,6 +327,14 @@ namespace TrqbvaDaSiIzberemIme.GameEngine
                 this.renderer.Clear();
                 this.renderer.WriteLine("YOU ARE DEAD!!!");
                 this.IsRunning = false;
+            }
+            
+            this.player.Attack(enemy);
+            if (enemy.Health <= 0)
+            {
+                this.renderer.WriteLine("You killed enemy!!!");
+                this.characters.Remove(enemy);
+                return;
             }
         }
     }
